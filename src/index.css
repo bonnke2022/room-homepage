@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "League Spartan";
+  src: url(images/LeagueSpartan-Regular.ttf) format("truetype");
+}
+
+:root {
+  --Dark-Gray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Dark-Gray: hsl(0, 0%, 27%);
+
+  /* box shadow*/
+  --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* font family */
+  --ff-spartan: "League Spartan";
+
+  /* font-weight */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  /* font size */
+  --fs-120: 12px;
+}
+.ff-spartan {
+  font-family: var(--ff-spartan);
+}
+.fw-400 {
+  font-weight: var(--fw-400);
+}
+.fw-500 {
+  font-weight: var(--fw-500);
+}
+.fw-700 {
+  font-weight: var(--fw-700);
+}
+.fs-120 {
+  font-size: var(--fs-120);
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-black {
+  color: var(--Black);
+}
+.text-gray {
+  color: var(--Very-Dark-Gray);
+}
+.text-white {
+  color: var(--White);
+}
+.text-dark-gray {
+  color: var(--Very-Dark-Gray);
+}
+.bg-white {
+  background: var(--White);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+p {
+  font-weight: var(--fw-500);
+}
+button,
+textarea,
+input {
+  font: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: var(--fw-700);
+}
+body {
+  min-height: 100vh;
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 375px;
+}
+.btn {
+  background: var(--Black);
+  padding: 0.8rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.btn:hover,
+.btn:active {
+  background: var(--Very-Dark-Gray);
+}
+.angle {
+  scale: 0.7;
+}
+.shop-link {
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--Very-Dark-Gray);
+  font-weight: 700;
+  letter-spacing: 9px;
+}
+@media screen and (min-width: 800px) {
+  .container {
+    display: none;
+  }
+}
